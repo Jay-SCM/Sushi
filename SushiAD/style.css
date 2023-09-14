@@ -1,0 +1,132 @@
+body{
+    background: rgb(58, 58, 58);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+  background-color: rgb(219, 223, 150);
+  border-radius: 40%;
+}
+
+/* HEADER */
+
+header {
+    background: black;
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    background-image: url("Pictures/hero_sushi.jpg")
+     
+}
+
+header a {
+    color: rgb(92, 89, 89);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+header .mobile {
+    display: none;
+
+}
+
+header .logo  a {
+
+    background-image: url("Pictures/kisspng-sushi-logo.png");
+    background-size: 175px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -999999999999999999px;
+    top: -30px;
+    width: 175px;
+
+}
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.MusicPlayer {
+  border-radius: 50%;
+  box-shadow: rgb(65, 64, 64) 0 0 20px;
+  padding: 10px;
+
+}
+
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 715px) {
+    header {
+      height: 250px;
+      background-position: 0 -30px;
+    }
+    header .mobile {
+      display: inline-block;
+    }
+    header .desktop {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    header {
+      height: 200px;
+      background-position: 0 -0px;
+    }
+  }
+
+/*  FEATURES LIST */
+
+.features {
+
+    background: rgb(109, 108, 108);
+    color: rgb(240, 234, 234);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.features figure { 
+
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px; 
+}
+
+.features figure img {
+
+   border: 1px solid white;
+   border-radius: 50%;
+   box-shadow: gray 0 0 10px;
+   width: 200px;
+    
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: gray;
+    font-size: 12px;
+    padding: 50px 50px;
+    text-align: center;
+  }
